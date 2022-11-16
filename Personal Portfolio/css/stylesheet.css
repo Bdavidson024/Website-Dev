@@ -1,0 +1,206 @@
+/*
+Author: Bradley Davidson
+Project: Personal Portfolio
+Date: 03/23/2022
+*/
+
+
+/*Style rules for Mobile Viewport*/
+
+
+/*Style rules for any device where width<=600px*/
+
+
+/*Style rule for images*/
+
+img {
+    max-width: 100%;
+    margin: 5px;
+    padding: 10px;
+}
+
+
+/*Applied to any device where width <= 600pixels*/
+
+
+/*style for body content*/
+
+body {
+    background-color: black;
+    margin: 3%;
+    padding: 3%;
+}
+
+
+/*Style for header content*/
+
+
+/*style for headings*/
+
+h1 {
+    color: rgb(255, 0, 128);
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: chartreuse;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+
+/*Style for unordered navigation list*/
+
+.navi {
+    position: sticky;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    margin-left: 2%;
+    padding: 2%;
+}
+ol {
+    text-align: center;
+    list-style-position: inside;
+}
+
+ul li {
+    text-align: center;
+    display: block;
+    background-color: aqua;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: small;
+    color: rgb(255, 0, 128);
+    font-weight: bold;
+}
+
+
+/*style for main content*/
+
+.hello {
+    float: left;
+    width: 45%;
+    margin: 22% 2% 2% 2%;
+}
+
+.suitimage {
+    width: auto;
+    height: auto;
+    float: right;
+    width: 45%;
+}
+
+main p {
+    color: aliceblue;
+    clear: both;
+    margin: 3% 3%;
+    padding: 3% 3%;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*style for footer content*/
+
+address {
+    color: aqua;
+}
+
+
+/*Media Query for Tablet Viewport*/
+
+@media screen and (min-width:600px),
+print {
+    .navi {
+        position: sticky;
+    }
+    .image {
+        text-align: center;
+        max-width: 100%;
+        height: auto;
+    }
+    div.navi {
+        width: 100%;
+        margin: 0px;
+    }
+    nav ul {
+        background-color: aqua;
+        border: 3px solid chartreuse;
+        width: auto;
+        margin-right: 2%;
+        padding-right: 2%;
+        overflow: auto;
+    }
+    nav ul li {
+        float: left;
+        width: 20%;
+        font-size: large;
+        text-align: center;
+    }
+    p {
+        size: 16px;
+        border: 3px solid yellow;
+    }
+    .tab-desk {
+        color: rgb(255, 0, 128);
+    }
+    a {
+        color: rgb(255, 0, 128);
+    }
+    footer {
+        margin-top: 15%;
+    }
+}
+
+
+/*Media Query for Desktop Viewport*/
+
+@media screen and (min-width:1200px),
+print {
+
+    .navi {
+        position: sticky;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    nav ul li a {
+        font-size: larger;
+    }
+    .image {
+        max-width: 100%;
+        height: auto;
+    }
+    h5 {
+        margin-left: 5%;
+    }
+    ul.certificates {
+        text-align: center;
+        background-color: black;
+        border: 3px solid yellow;
+        list-style-type: circle;
+        
+    }
+
+    ul.certificates li {
+        color: white;
+        background-color: black;
+    }
+
+    p {
+        size: 16px;
+        border: 3px solid yellow;
+    }
+
+}
